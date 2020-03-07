@@ -74,14 +74,7 @@ class AddNewCustomerViewController: UIViewController {
               showAlertBox(msg: "Please enter valid emailID")
           }
       }
-           func showAlertBox(msg : String)  {
-              let alert = UIAlertController(title: "Error", message:
-                  msg, preferredStyle: .alert)
-              alert.addAction(UIAlertAction(title: "Dismiss", style: .default))
-              
-              self.present(alert, animated: true)
-          }
-      
+         
 
     /*
     // MARK: - Navigation
