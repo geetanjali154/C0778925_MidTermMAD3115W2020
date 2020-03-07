@@ -49,11 +49,7 @@ class AddNewCustomerViewController: UIViewController {
           Singelton.getInstance().addCustomer(customer: c)
       }
       
-      func validate(){
-          guard let username = txtFirstName.text else{
-                 showAlertBox(msg: "Please enter firstname")
-          return
-          }
+     
           if username.isEmpty{
               showAlertBox(msg: "Please enter firstname")}
           
