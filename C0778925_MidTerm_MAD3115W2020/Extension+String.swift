@@ -15,9 +15,5 @@ extension String{
         }
     
     
-    func mobileValid() -> Bool{
-        let mobileNumberRegEx = "[0-9]{10}"
-        let mobileTest = NSPredicate(format: "SELF MATCHES %@", mobileNumberRegEx)
-        return mobileTest.evaluate(with: self)
-    }
+   
 }
