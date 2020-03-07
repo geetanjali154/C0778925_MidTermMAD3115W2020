@@ -8,16 +8,5 @@
 
 import Foundation
 extension String{
-    func isEmailValid(email:String) -> Bool {
-        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
-        return emailTest.evaluate(with: email)
-        }
     
-    
-    func mobileValid() -> Bool{
-        let mobileNumberRegEx = "[0-9]{10}"
-        let mobileTest = NSPredicate(format: "SELF MATCHES %@", mobileNumberRegEx)
-        return mobileTest.evaluate(with: self)
-    }
 }
