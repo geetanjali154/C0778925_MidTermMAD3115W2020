@@ -12,7 +12,9 @@ enum Gender{
 }
 class Customer
 {
-    
+    var customerId:String
+    var firstName:String
+    var lastName:String
      var   Dob:String
 
         var gender:Gender
