@@ -12,31 +12,29 @@ enum Gender{
 }
 class Customer
 {
-var customerId:String
-var firstName:String
-var lastName:String
- var   Dob:String
-
-    var gender:Gender
-    public var fullName: String{
-    return "\(firstName) \(lastName)"
-    }
-    //lazy var bills=[String : Bill]()
-    var age:String?
-var emailAddress:String?
-   
-    var totalBillToPay:Double=0.00
-    init(customerId:String,firstName:String,lastName:String,emailAddress:String,Dob:String,gender:Gender)
-{
-self.customerId=customerId
-self.firstName=firstName
-self.lastName=lastName
-    self.Dob=Dob
-    self.age=AgeCalculation.calculateAge(birthDate: Dob) 
     
-    self.gender=gender
-   
+     var   Dob:String
+
+        var gender:Gender
+        public var fullName: String{
+        return "\(firstName) \(lastName)"
+        }
+        //lazy var bills=[String : Bill]()
+        var age:String?
+    var emailAddress:String?
+       
+        var totalBillToPay:Double=0.00
+        init(customerId:String,firstName:String,lastName:String,emailAddress:String,Dob:String,gender:Gender)
+    {
+    self.customerId=customerId
+    self.firstName=firstName
+    self.lastName=lastName
+        self.Dob=Dob
+        self.age=AgeCalculation.calculateAge(birthDate: Dob)
+        
+        self.gender=gender
+       
 
 
-}
+    }
 }
