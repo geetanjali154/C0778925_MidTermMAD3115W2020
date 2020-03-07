@@ -104,7 +104,19 @@ class ViewController: UIViewController {
 }
    
     
-   
+   func readPlist(users:String,pwd:String){
+          if let path = Bundle.main.path(forResource: "CustomerPlist", ofType: "plist"){
+              if let dictionary  = NSMutableDictionary(contentsOfFile: path){
+                  if let c = dictionary["username_password"] as? [[String:String]]{
+                      for user in c{
+                          if user["username"]==users{
+                              if user["password"]==pwd{
+                                  flag=true
+                              }
+                              else{
+                                  showAlertBox(msg: "Wrong password")
+                              }
+                          }}
                         
                             
                         
