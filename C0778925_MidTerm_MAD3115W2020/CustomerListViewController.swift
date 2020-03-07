@@ -59,7 +59,8 @@ class CustomerListViewController: UIViewController {
         return customers.count 
     }
 
-   
+   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+          let cell = tableView.dequeueReusableCell(withIdentifier: "customerCell")
 
         let customer = customers[indexPath.row]
 
