@@ -45,7 +45,9 @@ class CustomerListViewController: UIViewController {
         }
         
         
-        
+        @IBAction func btnLogout(_ sender: UIBarButtonItem) {
+            self.navigationController!.popToRootViewController(animated: true)
+        }
         }
 
     extension CustomerListViewController : UITableViewDataSource, UITableViewDelegate{
