@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var lbl: UILabel!
     let userDefault = UserDefaults.standard
     override func viewDidLoad() {
-                                    
+                                      switch_rememberMe.isOn = false 
         getRememberMe()
         setRememberMe()
        
